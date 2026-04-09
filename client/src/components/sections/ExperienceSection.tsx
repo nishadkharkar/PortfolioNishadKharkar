@@ -24,6 +24,8 @@ function TimelineEntry({ entry, index }: { entry: ExperienceEntry; index: number
       transition={{ duration: 0.4, delay: index * 0.1 }}
       className={`timeline-entry pb-8 ${expanded ? "expanded" : ""}`}
       style={{ borderLeftColor: expanded ? accentColor : undefined }}
+      onMouseEnter={() => setExpanded(true)}
+      onMouseLeave={() => setExpanded(false)}
     >
       {/* Timeline dot */}
       <div
@@ -36,9 +38,8 @@ function TimelineEntry({ entry, index }: { entry: ExperienceEntry; index: number
       />
 
       {/* Header — always visible */}
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="w-full text-left group"
+      <div
+        className="w-full text-left group cursor-pointer"
         aria-expanded={expanded}
       >
         <div className="flex items-start justify-between gap-4">
@@ -94,7 +95,7 @@ function TimelineEntry({ entry, index }: { entry: ExperienceEntry; index: number
 
         {/* Summary — always visible */}
         <p className="text-[#8b949e] text-sm mt-2 leading-relaxed">{entry.summary}</p>
-      </button>
+      </div>
 
       {/* Expanded content */}
       <AnimatePresence>
@@ -193,7 +194,7 @@ export default function ExperienceSection() {
         className="flex items-center gap-2 mb-8 px-3 py-2 bg-[#161b22] border border-[#30363d] rounded-md w-fit"
       >
         <ExternalLink size={12} className="text-[#00d4ff]" />
-        <span className="text-[#8b949e] text-xs font-mono">Click any entry to expand details</span>
+        <span className="text-[#8b949e] text-xs font-mono">Hover over any entry to expand details</span>
       </motion.div>
 
       {/* Timeline */}
