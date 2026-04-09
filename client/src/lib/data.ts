@@ -5,7 +5,7 @@
 // ============================================================
 
 export const RESUME_PDF_URL =
-  "https://github.com/nishadkharkar/PortfolioNishadKharkar/blob/main/assets/resume.pdf";
+  "https://raw.githubusercontent.com/nishadkharkar/PortfolioNishadKharkar/main/assets/Nishad_Resume.pdf";
 
 export const PROFILE_IMAGE_URL =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663534270556/8tgYNoDDfrP9tkE7mcRp4M/profile-abstract-3QkLmoPnrTosJrWNQgLMhp.webp";
