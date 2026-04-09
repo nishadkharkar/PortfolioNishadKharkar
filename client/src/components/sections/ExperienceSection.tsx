@@ -44,19 +44,6 @@ function TimelineEntry({ entry, index }: { entry: ExperienceEntry; index: number
       >
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
-            {/* Company + position */}
-            <div className="flex items-center gap-2 mb-1">
-              <span
-                className="font-mono text-[10px] font-medium px-1.5 py-0.5 rounded"
-                style={{
-                  color: accentColor,
-                  backgroundColor: `${accentColor}15`,
-                  border: `1px solid ${accentColor}30`,
-                }}
-              >
-                {entry.type === "academic" ? "ACADEMIC" : "INDUSTRY"}
-              </span>
-            </div>
             <h3 className="font-display font-semibold text-white text-lg leading-tight group-hover:text-[#00d4ff] transition-colors">
               {entry.position}
             </h3>

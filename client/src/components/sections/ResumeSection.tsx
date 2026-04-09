@@ -95,7 +95,7 @@ export default function ResumeSection() {
 
         {/* PDF iframe */}
         <iframe
-          src={`${RESUME_PDF_URL}#toolbar=0&navpanes=0&scrollbar=1`}
+          src={`https://docs.google.com/gview?url=${encodeURIComponent(RESUME_PDF_URL)}&embedded=true`}
           className="w-full"
           style={{ height: "800px", border: "none" }}
           title="Nishad Kharkar Resume"
