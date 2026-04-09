@@ -5,13 +5,13 @@
 // ============================================================
 
 export const RESUME_PDF_URL =
-  "https://raw.githubusercontent.com/nishadkharkar/PortfolioNishadKharkar/main/assets/Nishad_Resume.pdf";
+  "https://raw.githubusercontent.com/nishadkharkar/PortfolioNishadKharkar/blob/main/assets/resume.pdf";
 
 export const PROFILE_IMAGE_URL =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663534270556/8tgYNoDDfrP9tkE7mcRp4M/profile-abstract-3QkLmoPnrTosJrWNQgLMhp.webp";
 
 export const HERO_BG_URL =
-  "https://github.com/nishadkharkar/PortfolioNishadKharkar/blob/main/assets/hero-bg-XeSx7Nx8yVULWxPC6Kcq7z.webp";
+  "https://raw.githubusercontent.com/nishadkharkar/PortfolioNishadKharkar/blob/main/assets/hero-bg-XeSx7Nx8yVULWxPC6Kcq7z.webp";
 
 export const personalInfo = {
   name: "Nishad Kharkar",
