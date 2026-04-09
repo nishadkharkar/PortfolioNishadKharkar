@@ -1,6 +1,5 @@
 {
   "buildCommand": "pnpm run build",
-  "outputDirectory": "dist",
-  "installCommand": "pnpm install",
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- server/ package.json"
+  "outputDirectory": "dist/public",
+  "installCommand": "pnpm install"
 }
